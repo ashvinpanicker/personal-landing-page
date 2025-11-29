@@ -57,7 +57,7 @@ function App() {
 
   if (loading || !data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex flex-col items-center justify-center gap-4">
+      <div className="p-10 bg-gradient-to-br rounded-lg from-slate-50 via-blue-50 to-slate-100 flex flex-col items-center justify-center gap-4">
         <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
         <div className="text-slate-500 font-medium">Loading...</div>
       </div>
@@ -66,7 +66,7 @@ function App() {
 
   return (
     <TooltipProvider>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex items-center justify-center p-4 sm:p-6">
+      <div className="min-h-screen rounded-lg bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex items-center justify-center p-4 sm:p-6">
         <div className="max-w-4xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
