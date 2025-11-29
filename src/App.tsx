@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from './components/ui/tooltip';
-import { Heart, Copy, Check } from 'lucide-react';
+import { Heart, Copy, Check, Loader2 } from 'lucide-react';
 import { useData } from './hooks/useData';
 import './App.css';
 
@@ -52,8 +52,9 @@ function App() {
 
   if (loading || !data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex items-center justify-center">
-        <div className="text-slate-700 text-xl">Loading...</div>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex flex-col items-center justify-center gap-4">
+        <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
+        <div className="text-slate-500 font-medium">Loading...</div>
       </div>
     );
   }
