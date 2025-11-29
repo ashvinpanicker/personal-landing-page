@@ -3,28 +3,6 @@ profile:
   title: Hi, I'm Ashvin
 
 subtitles:
-  # - a programmer
-  # - an entrepreneur
-  # - a gamer
-  # - a guitarist
-  # - a traveler
-  # - a kitesurfer
-  # - a cyclist
-  # - an App developer
-  # - a UI Designer
-  # - a musician
-  # - an inventor
-  # - figuring life out...
-  # - kinda crazy
-  # - super weird
-  # - happy you're here! :)
-  # - a problem solver
-  # - a dreamer
-  # - a doer
-  # - an everythinger
-  # - an indie hacker
-  # - an AI scholar
-  # - curious 🤔
   - text: a software engineer
     link: https://github.com/ashvinpanicker
   - text: an entrepreneur
