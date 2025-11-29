@@ -20,7 +20,7 @@ export interface AppData {
     name: string;
     title: string;
   };
-  subtitles: string[];
+  subtitles: { text: string; link?: string }[];
   socialLinks: SocialLink[];
   paymentAddresses: PaymentAddress[];
 }

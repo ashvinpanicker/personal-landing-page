@@ -104,7 +104,18 @@ function App() {
                       transition={{ duration: 0.5 }}
                       className="inline-block"
                     >
-                      {shuffledSubtitles[currentSubtitle]}
+                      {shuffledSubtitles[currentSubtitle].link ? (
+                        <a
+                          href={shuffledSubtitles[currentSubtitle].link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-blue-600 transition-colors duration-300 underline decoration-dotted cursor-pointer"
+                        >
+                          {shuffledSubtitles[currentSubtitle].text}
+                        </a>
+                      ) : (
+                        shuffledSubtitles[currentSubtitle].text
+                      )}
                     </motion.span>
                   </AnimatePresence>
                 </div>

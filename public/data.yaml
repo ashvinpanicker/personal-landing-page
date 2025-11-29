@@ -25,14 +25,22 @@ subtitles:
   # - an indie hacker
   # - an AI scholar
   # - curious 🤔
-  - a software engineer
-  - an entrepreneur
-  - a guitarist
-  - a traveler
-  - a kitesurfer
-  - a UI/UX designer
-  - figuring life out...
-  - happy you're here! :)
+  - text: a software engineer
+    link: https://github.com/ashvinpanicker
+  - text: an entrepreneur
+    link: https://www.crunchbase.com/person/ashvin-panicker
+  - text: a guitarist
+    link: https://soundcloud.com/ashvin-panicker/sets
+  - text: a data nerd
+    link: https://observablehq.com/@agnjkafgh/skill-tree
+  - text: a traveler
+    link: https://instagram.com/ashvinpanicker
+  - text: a kitesurfer
+    link: https://beta.ikointl.com/members/186928
+  - text: passionate about user experience
+    link: https://ashvinpanicker.vercel.app
+  - text: figuring life out...
+  - text: happy you're here! :)
 
 socialLinks:
   - name: Portfolio
