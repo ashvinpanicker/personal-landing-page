@@ -1,0 +1,27 @@
+# Ashvin Panicker - Personal Landing Page
+
+This is the personal landing page for Ashvin Panicker.
+
+## About Ashvin
+Ashvin Panicker is a Software Engineer, Entrepreneur, and Creator. He is passionate about user experience, music, building valuable products, and exploring the world.
+
+## Skills & Interests
+- Software Engineering (React, TypeScript, etc.)
+- Entrepreneurship
+- Music (Guitarist)
+- Data Analysis
+- Travel & Kitesurfing
+
+## Links
+- **Portfolio**: https://ashvinpanicker.vercel.app/
+- **GitHub**: https://github.com/ashvinpanicker
+- **LinkedIn**: https://www.linkedin.com/in/ashvin-panicker/
+- **X (Twitter)**: https://x.com/ashvinpanicker
+- **Crunchbase**: https://www.crunchbase.com/person/ashvin-panicker
+- **Product Hunt**: https://www.producthunt.com/@ashvin_panicker
+- **Instagram**: https://instagram.com/ashvinpanicker
+- **SoundCloud**: https://soundcloud.com/ashvin-panicker/sets
+- **LeetCode**: https://leetcode.com/u/ashvinpanicker/
+
+## Contact
+Connect via social media links above.

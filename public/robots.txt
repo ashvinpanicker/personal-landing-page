@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashvinpanicker.vercel.app/sitemap.xml

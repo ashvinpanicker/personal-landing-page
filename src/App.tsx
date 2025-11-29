@@ -60,10 +60,10 @@ function App() {
   if (loading || !data) {
     return (
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex flex-col items-center justify-center gap-4">
+        <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex flex-col items-center justify-center gap-4">
           <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
           <div className="text-slate-500 font-medium">Loading...</div>
-        </div>
+        </main>
       </ThemeProvider>
     );
   }
@@ -71,7 +71,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <TooltipProvider>
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex items-center justify-center p-4 sm:p-6 relative">
+        <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 flex items-center justify-center p-4 sm:p-6 relative">
           <div className="absolute top-4 right-4">
             <ModeToggle />
           </div>
@@ -250,7 +250,7 @@ function App() {
               </motion.div>
             </motion.div>
           </div>
-        </div>
+        </main>
       </TooltipProvider>
     </ThemeProvider>
   );
