@@ -39,8 +39,14 @@ subtitles:
     link: https://beta.ikointl.com/members/186928
   - text: passionate about user experience
     link: https://ashvinpanicker.vercel.app
+  - text: creating personalized merchandise
+    link: https://stashkart.in/pages/custom
   - text: figuring life out...
   - text: happy you're here! :)
+
+cta:
+  text: Shop Custom Gifts
+  url: https://stashkart.in/pages/custom
 
 socialLinks:
   - name: Portfolio
@@ -91,10 +97,10 @@ socialLinks:
     url: https://www.startupschool.org/cofounder-matching/candidate/KrDcoeszT
     icon: /icons/ycombinator.svg
     color: hover:text-[#FF6600]
-  - name: Figma
-    url: https://figma.com/@ashvinpanicker
-    icon: /icons/figma.svg
-    color: hover:text-[#F24E1E]
+  # - name: Figma
+  #   url: https://figma.com/@ashvinpanicker
+  #   icon: /icons/figma.svg
+  #   color: hover:text-[#F24E1E]
 
 paymentAddresses:
   - name: UPI

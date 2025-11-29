@@ -23,6 +23,10 @@ export interface AppData {
   subtitles: { text: string; link?: string }[];
   socialLinks: SocialLink[];
   paymentAddresses: PaymentAddress[];
+  cta?: {
+    text: string;
+    url: string;
+  };
 }
 
 export const useData = () => {
