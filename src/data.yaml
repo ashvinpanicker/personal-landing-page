@@ -3,28 +3,36 @@ profile:
   title: Hi, I'm Ashvin
 
 subtitles:
-  - a programmer
+  # - a programmer
+  # - an entrepreneur
+  # - a gamer
+  # - a guitarist
+  # - a traveler
+  # - a kitesurfer
+  # - a cyclist
+  # - an App developer
+  # - a UI Designer
+  # - a musician
+  # - an inventor
+  # - figuring life out...
+  # - kinda crazy
+  # - super weird
+  # - happy you're here! :)
+  # - a problem solver
+  # - a dreamer
+  # - a doer
+  # - an everythinger
+  # - an indie hacker
+  # - an AI scholar
+  # - curious 🤔
+  - a software engineer
   - an entrepreneur
-  - a gamer
   - a guitarist
   - a traveler
   - a kitesurfer
-  - a cyclist
-  - an App developer
-  - a UI Designer
-  - a musician
-  - an inventor
+  - a UI/UX designer
   - figuring life out...
-  - kinda crazy
-  - super weird
   - happy you're here! :)
-  - a problem solver
-  - a dreamer
-  - a doer
-  - an everythinger
-  - an indie hacker
-  - an AI scholar
-  - curious 🤔
 
 socialLinks:
   - name: Portfolio
