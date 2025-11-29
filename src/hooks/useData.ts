@@ -33,7 +33,7 @@ export const useData = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch('/src/data.yaml');
+        const response = await fetch('/data.yaml');
         const yamlText = await response.text();
         const parsedData = yaml.load(yamlText) as AppData;
         setData(parsedData);

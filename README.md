@@ -8,7 +8,7 @@ A modern, responsive, and animated personal landing page built with bolt.new usi
 - **Social Links**: Displays your social media profiles with custom icons and hover effects.
 - **Crypto/Payment Addresses**: distinct section for payment addresses (UPI, Bitcoin, USDT) with one-click copy-to-clipboard functionality.
 - **Responsive Design**: Fully responsive layout that looks great on mobile, tablet, and desktop.
-- **Data-Driven**: All content (profile info, links, subtitles) is managed via a simple YAML file (`src/data.yaml`), making updates effortless.
+- **Data-Driven**: All content (profile info, links, subtitles) is managed via a simple YAML file (`public/data.yaml`), making updates effortless.
 - **Animations**: Smooth entrance and interaction animations using Framer Motion.
 
 ## Tech Stack
@@ -55,7 +55,7 @@ Follow these steps to get the project running on your local machine.
 
 ## Configuration
 
-You can easily customize the content of the landing page by editing the `src/data.yaml` file.
+You can easily customize the content of the landing page by editing the `public/data.yaml` file.
 
 ### Structure of `data.yaml`
 
