@@ -7,7 +7,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from './components/ui/tooltip';
-import { Heart, Copy, Check, Loader2 } from 'lucide-react';
+import {
+  Heart,
+  // Copy,
+  // Check,
+  Loader2
+} from 'lucide-react';
 import { useData } from './hooks/useData';
 import './App.css';
 
@@ -24,7 +29,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 function App() {
   const { data, loading } = useData();
   const [currentSubtitle, setCurrentSubtitle] = useState(0);
-  const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
+  // const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
 
   const shuffledSubtitles = useMemo(() => {
     if (!data?.subtitles) return [];
@@ -40,15 +45,15 @@ function App() {
     return () => clearInterval(interval);
   }, [shuffledSubtitles]);
 
-  const copyToClipboard = async (text: string, name: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopiedAddress(name);
-      setTimeout(() => setCopiedAddress(null), 2000);
-    } catch (err) {
-      console.error('Failed to copy:', err);
-    }
-  };
+  // const copyToClipboard = async (text: string, name: string) => {
+  //   try {
+  //     await navigator.clipboard.writeText(text);
+  //     setCopiedAddress(name);
+  //     setTimeout(() => setCopiedAddress(null), 2000);
+  //   } catch (err) {
+  //     console.error('Failed to copy:', err);
+  //   }
+  // };
 
   if (loading || !data) {
     return (
