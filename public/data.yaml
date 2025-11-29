@@ -104,14 +104,14 @@ socialLinks:
 
 paymentAddresses:
   - name: UPI
-    address: ashiseverything@axl
+    address: "ashiseverything@axl"
     icon: /icons/upi.png
     color: hover:border-green-500
   - name: Bitcoin
-    address: 3Ppbu7ve8C5pk4xumHDsRXKE4jTyuqGJsK
+    address: "3Ppbu7ve8C5pk4xumHDsRXKE4jTyuqGJsK"
     icon: /icons/bitcoin.svg
     color: hover:border-orange-500
   - name: USDT
-    address: 0xc0026E08B2aD3e919CB5Fb968056cf9D168EE901
+    address: "0xc0026E08B2aD3e919CB5Fb968056cf9D168EE901"
     icon: /icons/tether.svg
     color: hover:border-blue-500

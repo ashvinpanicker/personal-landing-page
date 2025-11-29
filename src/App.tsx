@@ -184,7 +184,7 @@ function App() {
               </div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.8 }}
@@ -215,7 +215,7 @@ function App() {
                 ))}
               </div>
               <p className="text-slate-500 text-xs sm:text-sm mt-3 px-4">Click to copy address</p>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               initial={{ opacity: 0 }}
