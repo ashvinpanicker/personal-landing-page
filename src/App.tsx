@@ -105,8 +105,8 @@ function App() {
                   {data.profile.title}
                 </motion.h1>
 
-                <div className="h-16 sm:h-20 flex items-center justify-center px-4">
-                  <div className="text-xl sm:text-2xl md:text-4xl text-slate-700 dark:text-slate-200 font-medium text-center">
+                <div className="min-h-[4rem] sm:h-20 flex items-center justify-center px-4">
+                  <div className="text-lg sm:text-2xl md:text-4xl text-slate-700 dark:text-slate-200 font-medium text-center leading-tight">
                     <span>I am </span>
                     <AnimatePresence mode="wait">
                       <motion.span
