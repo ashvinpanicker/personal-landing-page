@@ -200,7 +200,7 @@ function App() {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.6 + (data.socialLinks.length + index) * 0.08, duration: 0.3 }}
                     >
-                      <Tooltip>
+                      <Tooltip open={copiedAddress === payment.name ? true : undefined}>
                         <TooltipTrigger asChild>
                           <Button
                             variant="outline"
@@ -211,14 +211,18 @@ function App() {
                             <div className="flex items-center gap-2">
                               <img src={payment.icon} alt={payment.name} className="w-5 h-5 object-contain dark:brightness-0 dark:invert" />
                               <span className="hidden sm:inline">{payment.name}</span>
-                              {copiedAddress === payment.name ? (
-                                <Check className="w-4 h-4 text-green-600" />
-                              ) : null}
                             </div>
                           </Button>
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>{copiedAddress === payment.name ? 'Copied!' : `Copy ${payment.name}`}</p>
+                          {copiedAddress === payment.name ? (
+                            <div className="flex items-center gap-2 text-green-600 font-medium">
+                              <Check className="w-4 h-4" />
+                              <p>Copied!</p>
+                            </div>
+                          ) : (
+                            <p>Copy {payment.name}</p>
+                          )}
                         </TooltipContent>
                       </Tooltip>
                     </motion.div>
