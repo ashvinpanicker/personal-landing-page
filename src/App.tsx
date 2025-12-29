@@ -9,8 +9,7 @@ import {
 } from './components/ui/tooltip';
 import {
   Heart,
-  // Copy,
-  // Check,
+  Check,
   Loader2
 } from 'lucide-react';
 import { useData } from './hooks/useData';
@@ -31,7 +30,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 function App() {
   const { data, loading } = useData();
   const [currentSubtitle, setCurrentSubtitle] = useState(0);
-  // const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
+  const [copiedAddress, setCopiedAddress] = useState<string | null>(null);
 
   const shuffledSubtitles = useMemo(() => {
     if (!data?.subtitles) return [];
@@ -47,15 +46,15 @@ function App() {
     return () => clearInterval(interval);
   }, [shuffledSubtitles]);
 
-  // const copyToClipboard = async (text: string, name: string) => {
-  //   try {
-  //     await navigator.clipboard.writeText(text);
-  //     setCopiedAddress(name);
-  //     setTimeout(() => setCopiedAddress(null), 2000);
-  //   } catch (err) {
-  //     console.error('Failed to copy:', err);
-  //   }
-  // };
+  const copyToClipboard = async (text: string, name: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedAddress(name);
+      setTimeout(() => setCopiedAddress(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
 
   if (loading || !data) {
     return (
@@ -194,41 +193,40 @@ function App() {
                       </Tooltip>
                     </motion.div>
                   ))}
-                </div>
-              </motion.div>
-
-              {/* <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, duration: 0.8 }}
-                className="pt-8"
-              >
-                <p className="text-slate-600 mb-4 text-base sm:text-lg">Send me some coin</p>
-                <div className="flex flex-wrap gap-3 justify-center items-center px-4">
                   {data.paymentAddresses.map((payment, index) => (
                     <motion.div
                       key={payment.name}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 1.4 + index * 0.1, duration: 0.3 }}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.6 + (data.socialLinks.length + index) * 0.08, duration: 0.3 }}
                     >
-                      <button
-                        onClick={() => copyToClipboard(payment.address, payment.name)}
-                        className={`px-4 py-2 rounded-lg border-2 border-slate-300 bg-white/80 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg ${payment.color} flex items-center gap-2`}
-                      >
-                        <img src={payment.icon} alt={payment.name} className="w-5 h-5 object-contain" />
-                        <span className="font-medium text-slate-700">{payment.name}</span>
-                        {copiedAddress === payment.name ? (
-                          <Check className="w-4 h-4 text-green-600" />
-                        ) : (
-                          <Copy className="w-4 h-4 text-slate-500" />
-                        )}
-                      </button>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            variant="outline"
+                            size="lg"
+                            className={`transition-all duration-300 hover:scale-110 hover:shadow-lg ${payment.color} bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm dark:border-slate-700 dark:text-slate-200 cursor-pointer`}
+                            onClick={() => copyToClipboard(payment.address, payment.name)}
+                          >
+                            <div className="flex items-center gap-2">
+                              <img src={payment.icon} alt={payment.name} className="w-5 h-5 object-contain dark:brightness-0 dark:invert" />
+                              <span className="hidden sm:inline">{payment.name}</span>
+                              {copiedAddress === payment.name ? (
+                                <Check className="w-4 h-4 text-green-600" />
+                              ) : null}
+                            </div>
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>{copiedAddress === payment.name ? 'Copied!' : `Copy ${payment.name}`}</p>
+                        </TooltipContent>
+                      </Tooltip>
                     </motion.div>
                   ))}
                 </div>
-                <p className="text-slate-500 text-xs sm:text-sm mt-3 px-4">Click to copy address</p>
-              </motion.div> */}
+              </motion.div>
+
+
 
               <motion.div
                 initial={{ opacity: 0 }}

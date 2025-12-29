@@ -71,6 +71,10 @@ socialLinks:
     url: https://leetcode.com/u/ashvinpanicker/
     icon: /icons/leetcode.svg
     color: hover:text-[#FFA116]
+  - name: Stack Overflow
+    url: https://stackoverflow.com/users/6799282/ashvin-panicker
+    icon: /icons/stackoverflow.svg
+    color: hover:text-[#F48024]
   - name: Y Combinator
     url: https://www.startupschool.org/cofounder-matching/candidate/KrDcoeszT
     icon: /icons/ycombinator.svg
